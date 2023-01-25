@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Load & cache dependency
+      - name: Load & cache dependencies
         id: cache-deps
         uses: ./.github/actions/cached-deps
         with:
@@ -69,8 +69,9 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
-          bucket: testing2112
+          bucket: testing
           dist-folder: ./dist
           # bucket-region: us-east-2
       - name: Output information
-        run: echo "Live URL ${{ steps.deploy.outputs.website-url }}"
+        run: |
+          echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
