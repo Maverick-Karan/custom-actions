@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\actions",
+    "\\.github\\actions\\cached-deps",
+    "\\.github\\workflows"
+  ],
+  "SelectedNode": "\\.github\\actions\\cached-deps\\action.yml",
+  "PreviewInSolutionExplorer": false
+}
