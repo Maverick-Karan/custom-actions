@@ -3,9 +3,9 @@
     "",
     "\\.github",
     "\\.github\\actions",
-    "\\.github\\actions\\cached-deps",
+    "\\.github\\actions\\deploy-s3-docker",
     "\\.github\\workflows"
   ],
-  "SelectedNode": "\\.github\\actions\\cached-deps\\action.yml",
+  "SelectedNode": "\\.github\\actions\\deploy-s3-docker\\action.yml",
   "PreviewInSolutionExplorer": false
 }
