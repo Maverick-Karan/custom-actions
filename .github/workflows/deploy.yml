@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: dist-files
+          name: DIST-FILES
           path: dist
   deploy:
     needs: build
@@ -58,7 +58,7 @@ jobs:
       - name: Get build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: dist-files
+          name: DIST-FILES
           path: ./dist
       - name: Output contents
         run: ls
@@ -74,4 +74,4 @@ jobs:
           # bucket-region: us-east-2
       - name: Output information
         run: |
-          echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
+           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
