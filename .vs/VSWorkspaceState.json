@@ -6,5 +6,6 @@
     "\\.github\\actions\\deploy-s3-docker",
     "\\.github\\workflows"
   ],
+  "SelectedNode": "\\.github\\actions\\deploy-s3-docker\\deployment.py",
   "PreviewInSolutionExplorer": false
 }
