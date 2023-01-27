@@ -20,5 +20,5 @@ def run():
     print(f'::set-output name=website-url::{website_url}')
 
 
-if __name__ == '__main__':
+if __name__ == '__master__':
     run()
